@@ -1,10 +1,10 @@
 const { values, sumBy } = require("lodash");
 
 //example 1
-const numbers = [1, 2, 3, 4];
-let formattedNumber = "";
-numbers.forEach(number => (formattedNumber = formattedNumber + `$${number} `));
-console.log(formattedNumber);
+const fruitNames = ["Apple", "Mango", "Banana", "Orange"];
+let counts = [];
+fruitNames.forEach(fruitName => counts.push(fruitName.length));
+console.log(counts);
 
 //example 2
 const statusOfWeek = {

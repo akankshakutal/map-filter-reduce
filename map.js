@@ -1,3 +1,3 @@
-const numbers = [1, 2, 3, 4];
-const formattedNumber = numbers.map(number => `$${number} `);
-console.log(formattedNumber.join(""));
+const fruitNames = ["Apple", "Mango", "Banana", "Orange"];
+const counts = fruitNames.map(fruitName => fruitName.length);
+console.log(counts);
