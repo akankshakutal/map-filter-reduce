@@ -49,3 +49,16 @@ const main = () => {
 };
 
 main();
+
+//example 5
+const printer = name => console.log(name);
+let name = "John";
+const getPrinter = () => {
+  const name = "Peter";
+  return () => {
+    printer(name);
+  };
+};
+name = "devid";
+let work = getPrinter();
+work();
